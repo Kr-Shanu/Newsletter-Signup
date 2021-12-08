@@ -87,7 +87,7 @@ app.post("/failure", function(req, res)
 
 app.post("/success", function(req, res)
 {
-    res.redirect("/");
+    res.redirect("https://www.youtube.com/channel/UCnT6Z9ay-snq1c0lZkEtYjg");
 });
 
 
