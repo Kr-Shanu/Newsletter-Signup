@@ -44,13 +44,13 @@ app.post("/", function(req, res)
 
     const jsonData = JSON.stringify(data);
 
-    const url = "https://us20.api.mailchimp.com/3.0/lists/fcd0d52b7c"
+    const url = "https://...." // please enter your mail  chimp url here.
 
     // Now we will create some options which is going to be some js objects.
     const options = {
         method: "POST",
         // We need to get something for authentication, we will use auth for authentication
-        auth: "shanu:6e7a621c8a3d2968ce748280c12f8d97-us20"
+        auth: "...." // enter your key of mail chimp here.
     }
 
     const request = https.request(url, options, function(response)
@@ -99,9 +99,3 @@ app.listen(process.env.PORT || 3000, function()
 });
 
 
-// API key for mailchip
-// 6e7a621c8a3d2968ce748280c12f8d97-us20
-
-
-// Audiance id:
-// fcd0d52b7c
